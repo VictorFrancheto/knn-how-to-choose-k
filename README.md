@@ -19,10 +19,10 @@ where $C_i$ is the set of points in cluster $i$ and $\mu_i$ is the corresponding
 ### Observations
 
 1. **Convergence**:  
-   The algorithm always converges to a local minimum of the objective function but does not guarantee finding the global minimum. The quality of the solution can strongly depend on the initialization of the centroids, making the algorithm sensitive to this choice.
+   - The algorithm always converges to a local minimum of the objective function but does not guarantee finding the global minimum. The quality of the solution can strongly depend on the initialization of the centroids, making the algorithm sensitive to this choice.
 
 2. **Computational Complexity**:  
-   The $k$-means has a complexity of $O(n \cdot k \cdot t \cdot d)$, where $n$ is the number of points, $k$ the number of clusters, $t$ the number of iterations, and $d$ the dimensionality of the data.
+   - The $k$-means has a complexity of $O(n \cdot k \cdot t \cdot d)$, where $n$ is the number of points, $k$ the number of clusters, $t$ the number of iterations, and $d$ the dimensionality of the data.
 
 3. **Limitations and Extensions**:  
    - The algorithm assumes that clusters are convex and isotropic, which may not be suitable for datasets with non-linear distributions or complex shapes.  
