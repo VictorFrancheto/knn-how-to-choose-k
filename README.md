@@ -1,4 +1,4 @@
-# K_means: How_to_choose_K
+# K-means: How to choose K
 
 In this repository, I will teach you how to choose the optimal value of K in the K-means algorithm to create concise clusters. **<span style="color:red;">(In progress)</span>**
 
