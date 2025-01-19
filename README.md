@@ -14,14 +14,16 @@ The **k-Nearest Neighbors (k-NN)** is a non-parametric algorithm used for classi
 Mathematically, given a dataset $\{(x_i, y_i)\}_{i=1}^n$, the algorithm proceeds as follows.
 
 1. **Compute Distances**:  
-   For each point $x_i$ in the training set, calculate its distance to the query point $x_q$, 
+   For each point $x_i$ in the training set, calculate its distance to the query point $x_q$,
+   
    $$d(x_q, x_i) = \|x_q - x_i\|,$$
+   
    where $\| \cdot \|$ is the chosen distance metric.
 
-2. **Identify Nearest Neighbors**:  
+3. **Identify Nearest Neighbors**:  
    Select the $k$-points with the smallest distances to $x_q$.
 
-3. **Predict the Output**:  
+4. **Predict the Output**:  
    - **For Classification**: Assign the most common label among the $k$-nearest neighbors
      $$
      \hat{y}(x_q) = \text{mode}\{y_{j_1}, y_{j_2}, \ldots, y_{j_k}\}.
