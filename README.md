@@ -66,11 +66,10 @@ Mathematically, given a dataset $\{(x_i, y_i)\}_{i=1}^n$, the algorithm proceeds
      - $p = 1$: Manhattan Distance.
 
    - **Hamming Distance**:  
-     Used for categorical variables or binary data, it measures the number of differing dimensions:
-     $$
-     d_{\text{Hamming}}(x_q, x_i) = \sum_{j=1}^d \mathbb{I}(x_{qj} \neq x_{ij}),
-     $$
-     where \( \mathbb{I} \) is an indicator function that is 1 if the values differ and 0 otherwise.
+     Used for categorical variables or binary data, it measures the number of differing dimensions
+     
+     $$d_{\text{Hamming}}(x_q, x_i) = \sum_{j=1}^d \mathbb{I}(x_{qj} \neq x_{ij}),$$
+     where $\mathbb{I}$ is an indicator function that is $1$ if the values differ and $0$ otherwise.
 
 Each metric has specific applications:
 - **Euclidean**: Suitable for continuous and isotropic data.
