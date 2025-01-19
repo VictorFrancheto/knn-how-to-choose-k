@@ -11,7 +11,7 @@ Entendido! Aqui está o texto revisado para explicar o **k-Nearest Neighbors (k-
 
 The **k-Nearest Neighbors (k-NN)** is a non-parametric algorithm used for classification and regression tasks. It predicts the label or value of a query point $x_q$ based on the $k$-closest points in the training set, measured using a distance metric (e.g., Euclidean, Manhattan etc).
 
-Mathematically, given a dataset $\{(x_i, y_i)\}_{i=1}^n$, the algorithm proceeds as follows.
+Mathematically, given a dataset \(\{(x_i, y_i)\}_{i=1}^n\), the algorithm proceeds as follows.
 
 1. **Compute Distances**:  
    For each point $x_i$ in the training set, calculate its distance to the query point $x_q$, 
