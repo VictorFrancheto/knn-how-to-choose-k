@@ -25,6 +25,7 @@ Mathematically, given a dataset $\{(x_i, y_i)\}_{i=1}^n$, the algorithm proceeds
 
 4. **Predict the Output**:  
    - **For Classification**: Assign the most common label among the $k$-nearest neighbors
+  
      $$\hat{y}(x_q) = \text{mode}\{y_{j_1}, y_{j_2}, \ldots, y_{j_k}\}.$$
      
    - **For Regression**: Predict the average of the $k$-nearest neighbors target values
@@ -41,32 +42,28 @@ Mathematically, given a dataset $\{(x_i, y_i)\}_{i=1}^n$, the algorithm proceeds
    The choice of the distance metric significantly affects the performance of $k$-NN, as it determines how the **closeness** between points is measured. Common options include.
 
    - **Euclidean Distance**:  
-     The straight-line distance between two points in space, calculated as:
-     $$
-     d_{\text{Euclidean}}(x_q, x_i) = \sqrt{\sum_{j=1}^d (x_{qj} - x_{ij})^2},
-     $$
-     where \( x_q = (x_{q1}, x_{q2}, \dots, x_{qd}) \) and \( x_i = (x_{i1}, x_{i2}, \dots, x_{id}) \).
+     The straight-line distance between two points in space, calculated as
+     
+     $$d_{\text{Euclidean}}(x_q, x_i) = \sqrt{\sum_{j=1}^d (x_{qj} - x_{ij})^2},$$
+     where $x_q = (x_{q1}, x_{q2}, \dots, x_{qd})$ and $x_i = (x_{i1}, x_{i2}, \dots, x_{id})$.
 
    - **Manhattan Distance** (or Taxicab Distance):  
-     The sum of the absolute differences of their coordinates, often used in grid-like structures:
-     $$
-     d_{\text{Manhattan}}(x_q, x_i) = \sum_{j=1}^d |x_{qj} - x_{ij}|.
-     $$
+     The sum of the absolute differences of their coordinates, often used in grid-like structures
+     
+     $$d_{\text{Manhattan}}(x_q, x_i) = \sum_{j=1}^d |x_{qj} - x_{ij}|.$$
 
    - **Chebyshev Distance**:  
-     The maximum absolute difference across any dimension, capturing the idea of "one step in any direction":
-     $$
-     d_{\text{Chebyshev}}(x_q, x_i) = \max_{j=1}^d |x_{qj} - x_{ij}|.
-     $$
+     The maximum absolute difference across any dimension, capturing the idea of "one step in any direction"
+     
+     $$d_{\text{Chebyshev}}(x_q, x_i) = \max_{j=1}^d |x_{qj} - x_{ij}|.$$
 
    - **Minkowski Distance**:  
-     A generalized form of distance, which includes both Euclidean and Manhattan distances as special cases:
-     $$
-     d_{\text{Minkowski}}(x_q, x_i) = \left( \sum_{j=1}^d |x_{qj} - x_{ij}|^p \right)^{\frac{1}{p}},
-     $$
-     where \( p \) is a parameter:
-     - \( p = 2 \): Euclidean Distance.
-     - \( p = 1 \): Manhattan Distance.
+     A generalized form of distance, which includes both Euclidean and Manhattan distances as special cases
+     
+     $$d_{\text{Minkowski}}(x_q, x_i) = \left( \sum_{j=1}^d |x_{qj} - x_{ij}|^p \right)^{\frac{1}{p}},$$
+     where $p$ is a parameter:
+     - $p = 2$: Euclidean Distance.
+     - $p = 1$: Manhattan Distance.
 
    - **Hamming Distance**:  
      Used for categorical variables or binary data, it measures the number of differing dimensions:
