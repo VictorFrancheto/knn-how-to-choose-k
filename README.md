@@ -2,7 +2,7 @@
 
 In this repository, I will teach you how to choose the optimal value of $k$ in the $k$-NN algorithm. 
 <p align="center">
-  <img src="https://github.com/VictorFrancheto/K_means-How_to_choose_K/blob/main/k_means.jpg">
+  <img src="https://github.com/VictorFrancheto/K_means-How_to_choose_K/blob/main/k_nn.jpg">
 </p>
 
 The **k-Nearest Neighbors (k-NN)** is a non-parametric algorithm used for classification and regression tasks. It predicts the label or value of a query point $x_q$ based on the $k$-closest points in the training set, measured using a distance metric (e.g., Euclidean, Manhattan...).
