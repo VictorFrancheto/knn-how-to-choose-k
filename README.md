@@ -1,4 +1,4 @@
-# K-means: How to choose K
+# $k$-NN: How to choose K
 
 In this repository, I will teach you how to choose the optimal value of K in the K-means algorithm to create concise clusters. **<span style="color:red;">(In progress)</span>**
 
@@ -28,6 +28,7 @@ Mathematically, given a dataset $\{(x_i, y_i)\}_{i=1}^n$, the algorithm proceeds
      $$
      \hat{y}(x_q) = \text{mode}\{y_{j_1}, y_{j_2}, \ldots, y_{j_k}\}.
      $$
+     
    - **For Regression**: Predict the average of the $k$-nearest neighbors target values
      $$
      \hat{y}(x_q) = \frac{1}{k} \sum_{i=1}^k y_{j_i}.
