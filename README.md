@@ -15,9 +15,7 @@ Mathematically, given a dataset $\{(x_i, y_i)\}_{i=1}^n$, the algorithm proceeds
 
 1. **Compute Distances**:  
    For each point $x_i$ in the training set, calculate its distance to the query point $x_q$, 
-   $$
-   d(x_q, x_i) = \|x_q - x_i\|,
-   $$
+   $$d(x_q, x_i) = \|x_q - x_i\|,$$
    where $\| \cdot \|$ is the chosen distance metric.
 
 2. **Identify Nearest Neighbors**:  
