@@ -5,7 +5,7 @@ In this repository, I will teach you how to choose the optimal value of K in the
   <img src="https://github.com/VictorFrancheto/K_means-How_to_choose_K/blob/main/k_means.jpg">
 </p>
 
-The **k-Nearest Neighbors (k-NN)** is a non-parametric algorithm used for classification and regression tasks. It predicts the label or value of a query point $x_q$ based on the $k$-closest points in the training set, measured using a distance metric (e.g., Euclidean, Manhattan etc).
+The **k-Nearest Neighbors (k-NN)** is a non-parametric algorithm used for classification and regression tasks. It predicts the label or value of a query point $x_q$ based on the $k$-closest points in the training set, measured using a distance metric (e.g., Euclidean, Manhattan...).
 
 Mathematically, given a dataset $\{(x_i, y_i)\}_{i=1}^n$, the algorithm proceeds as follows.
 
@@ -22,7 +22,7 @@ Mathematically, given a dataset $\{(x_i, y_i)\}_{i=1}^n$, the algorithm proceeds
 4. **Predict the Output**:  
    - **For Classification**: Assign the most common label among the $k$-nearest neighbors
   
-     $$\hat{y}(x_q) = \text{mode}\{y_{j_1}, y_{j_2}, \ldots, y_{j_k}\}.$$
+     $$\hat{y}(x_q) = \text{mode} \{y_{j_1}, y_{j_2}, \ldots, y_{j_k}\}.$$
      
    - **For Regression**: Predict the average of the $k$-nearest neighbors target values
 
